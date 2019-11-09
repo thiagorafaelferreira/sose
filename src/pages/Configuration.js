@@ -20,7 +20,7 @@ class Configuration extends Component {
         const storage = await AsyncStorage.getItem('config');
         const storageParsed = JSON.parse(storage);
 
-        if(storageParsed.devices !== null && storageParsed.devices !== undefined) {
+        if(storageParsed.devices  null && storageParsed.devices !== undefined) {
             for(let i = 0; i < config.numberDevices; i++) {
                 storageParsed.devicesTitle.push({ title: `Device ${i+1}` });
             };
