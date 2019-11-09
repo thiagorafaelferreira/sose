@@ -24,7 +24,7 @@ class Configuration extends Component {
             for(let i = 0; i < config.numberDevices; i++) {
                 storageParsed.devicesTitle.push({ title: `Device ${i+1}` });
             };
-            await AsyncStorage.setItem('config', JSON.stringify(storageParsed));
+            await    AsyncStorage.setItem('config', JSON.stringify(storageParsed));
         }
 
     }
